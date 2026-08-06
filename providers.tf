@@ -9,4 +9,5 @@ terraform {
 }
 
 # Provider configuration (uses environment variables for credentials)
+# The provider automatically reads MONGODB_ATLAS_PUBLIC_KEY and MONGODB_ATLAS_PRIVATE_KEY from the environment
 provider "mongodbatlas" {}
