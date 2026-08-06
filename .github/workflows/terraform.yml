@@ -18,8 +18,8 @@ jobs:
       TF_VAR_org_id: ${{ secrets.ATLAS_ORGANIZATION_ID }}
       
       # Inject MongoDB Atlas Authentication Credentials
-      MONGODB_ATLAS_CLIENT_ID: ${{ secrets.MONGODB_ATLAS_CLIENT_ID }}
-      MONGODB_ATLAS_CLIENT_SECRET: ${{ secrets.MONGODB_ATLAS_CLIENT_SECRET }}
+      MONGODB_ATLAS_PUBLIC_KEY: ${{ secrets.MONGODB_ATLAS_PUBLIC_KEY }}
+      MONGODB_ATLAS_PRIVATE_KEY: ${{ secrets.MONGODB_ATLAS_PRIVATE_KEY }}
 
     steps:
       - name: Checkout Code
